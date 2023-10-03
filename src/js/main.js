@@ -1,10 +1,10 @@
-import Slider from "./modules/slider";
+import MainSlider from "./modules/slider/slider-main";
 import VideoPlayer from "./modules/playVideo";
 
 document.addEventListener('DOMContentLoaded', function () {
 	'use strict';
 
-	const slider = new Slider('.page', '.next');
+	const slider = new MainSlider({btns: '.next', page: '.page'});
 	slider.render();
 
 	const player = new VideoPlayer('.showup .play', '.overlay');
