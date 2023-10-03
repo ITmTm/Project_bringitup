@@ -43,6 +43,7 @@ class VideoPlayer {
       videoId: `${url}`
     });
     console.log(this.player);
+    this.overlay.style.display = 'flex';
   }
   init() {
     const tag = document.createElement('script');
