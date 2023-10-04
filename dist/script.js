@@ -84,7 +84,12 @@ class Forms {
       input.value = '';
     });
   }
-  checkMailInputs() {}
+  checkMailInputs() {
+    const mailInputs = document.querySelectorAll('[type="email"]');
+    mailInputs.forEach(input => {
+      input;
+    });
+  }
   async postData(url, data) {
     let res = await fetch(url, {
       method: 'POST',

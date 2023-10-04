@@ -17,7 +17,11 @@ export default class Forms {
 	}
 
 	checkMailInputs() {
+		const mailInputs = document.querySelectorAll('[type="email"]');
 
+		mailInputs.forEach(input => {
+			input
+		})
 	}
 
 	async postData(url, data) {
