@@ -1,5 +1,5 @@
 export default class Difference {
-	constructor(oldOfficer, newOfficer, items) {
+	constructor(oldOfficer, newOfficer, items, cardAnimals) {
 		this.oldOfficer = document.querySelector(oldOfficer);
 		this.newOfficer = document.querySelector(newOfficer);
 		this.oldItems = this.oldOfficer.querySelectorAll(items);
@@ -9,12 +9,20 @@ export default class Difference {
 		this.newCounter = 0;
 	}
 
+	animatedCards(itemsOld, itemsNew) {
+		itemsOld.forEach(card => {
+			card.classList.add('animated', 'fadeIn')
+		});
+
+		itemsNew.forEach(card => {
+			card.classList.add('animated', 'fadeIn')
+		});
+	}
 
 	bindTriggers(container, items, counter) {
 		container.querySelector('.plus').addEventListener('click', () => {
 			if (counter !== items.length - 2) {
 				items[counter].style.display = 'flex';
-				// container.classList.add('animated', 'fadeIn');
 				counter++;
 			} else {
 				items[counter].style.display = 'flex';
@@ -34,6 +42,7 @@ export default class Difference {
 	init() {
 		this.hideItems(this.oldItems);
 		this.hideItems(this.newItems);
+		this.animatedCards(this.oldItems, this.newItems);
 
 		this.bindTriggers(this.oldOfficer, this.oldItems, this.oldCounter);
 		this.bindTriggers(this.newOfficer, this.newItems, this.newCounter);
