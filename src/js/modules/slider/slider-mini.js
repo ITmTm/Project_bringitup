@@ -56,30 +56,32 @@ export default class MiniSlider extends Slider {
 
 
 	init() {
-		this.container.style.cssText = `
+		try {
+			this.container.style.cssText = `
 			display: flex;
 			flex-wrap: wrap;
 			overflow: hidden;
 			align-items: flex-start;
-		`;
+			`;
 
-		this.bindTriggers();
-		this.decorizeSlides();
+			this.bindTriggers();
+			this.decorizeSlides();
 
-		if (this.autoplay) {
-			this.container.addEventListener('mouseenter', () => clearInterval(this.paused));
+			if (this.autoplay) {
+				this.container.addEventListener('mouseenter', () => clearInterval(this.paused));
 
-			this.next.addEventListener('mouseenter', () => clearInterval(this.paused));
+				this.next.addEventListener('mouseenter', () => clearInterval(this.paused));
 
-			this.prev.addEventListener('mouseenter', () => clearInterval(this.paused));
+				this.prev.addEventListener('mouseenter', () => clearInterval(this.paused));
 
-			this.container.addEventListener('mouseleave', () => this.activeAnimation());
+				this.container.addEventListener('mouseleave', () => this.activeAnimation());
 
-			this.next.addEventListener('mouseleave', () => this.activeAnimation());
+				this.next.addEventListener('mouseleave', () => this.activeAnimation());
 
-			this.prev.addEventListener('mouseleave', () => this.activeAnimation());
+				this.prev.addEventListener('mouseleave', () => this.activeAnimation());
 
-			this.activeAnimation();
-		}
+				this.activeAnimation();
+			}
+		} catch (e){}
 	}
 }

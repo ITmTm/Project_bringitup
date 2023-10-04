@@ -14,12 +14,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class Difference {
   constructor(oldOfficer, newOfficer, items, cardAnimals) {
-    this.oldOfficer = document.querySelector(oldOfficer);
-    this.newOfficer = document.querySelector(newOfficer);
-    this.oldItems = this.oldOfficer.querySelectorAll(items);
-    this.newItems = this.newOfficer.querySelectorAll(items);
-    this.oldCounter = 0;
-    this.newCounter = 0;
+    try {
+      this.oldOfficer = document.querySelector(oldOfficer);
+      this.newOfficer = document.querySelector(newOfficer);
+      this.oldItems = this.oldOfficer.querySelectorAll(items);
+      this.newItems = this.newOfficer.querySelectorAll(items);
+      this.oldCounter = 0;
+      this.newCounter = 0;
+    } catch (e) {}
   }
   animatedCards(itemsOld, itemsNew) {
     itemsOld.forEach(card => {
@@ -48,11 +50,13 @@ class Difference {
     });
   }
   init() {
-    this.hideItems(this.oldItems);
-    this.hideItems(this.newItems);
-    this.animatedCards(this.oldItems, this.newItems);
-    this.bindTriggers(this.oldOfficer, this.oldItems, this.oldCounter);
-    this.bindTriggers(this.newOfficer, this.newItems, this.newCounter);
+    try {
+      this.hideItems(this.oldItems);
+      this.hideItems(this.newItems);
+      this.animatedCards(this.oldItems, this.newItems);
+      this.bindTriggers(this.oldOfficer, this.oldItems, this.oldCounter);
+      this.bindTriggers(this.newOfficer, this.newItems, this.newCounter);
+    } catch (e) {}
   }
 }
 
@@ -317,19 +321,21 @@ class MainSlider extends _slider__WEBPACK_IMPORTED_MODULE_0__["default"] {
   }
   render() {
     try {
-      this.hanson = document.querySelector('.hanson');
+      try {
+        this.hanson = document.querySelector('.hanson');
+      } catch (e) {}
+      this.btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          this.plusSlides(1);
+        });
+        btn.parentNode.previousElementSibling.addEventListener('click', e => {
+          e.preventDefault();
+          this.slideIndex = 1;
+          this.showSlides(this.slideIndex);
+        });
+      });
+      this.showSlides(this.slideIndex);
     } catch (e) {}
-    this.btns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        this.plusSlides(1);
-      });
-      btn.parentNode.previousElementSibling.addEventListener('click', e => {
-        e.preventDefault();
-        this.slideIndex = 1;
-        this.showSlides(this.slideIndex);
-      });
-    });
-    this.showSlides(this.slideIndex);
   }
 }
 
@@ -393,23 +399,25 @@ class MiniSlider extends _slider__WEBPACK_IMPORTED_MODULE_0__["default"] {
     this.paused = setInterval(() => this.nextSlide(), 5000);
   }
   init() {
-    this.container.style.cssText = `
+    try {
+      this.container.style.cssText = `
 			display: flex;
 			flex-wrap: wrap;
 			overflow: hidden;
 			align-items: flex-start;
-		`;
-    this.bindTriggers();
-    this.decorizeSlides();
-    if (this.autoplay) {
-      this.container.addEventListener('mouseenter', () => clearInterval(this.paused));
-      this.next.addEventListener('mouseenter', () => clearInterval(this.paused));
-      this.prev.addEventListener('mouseenter', () => clearInterval(this.paused));
-      this.container.addEventListener('mouseleave', () => this.activeAnimation());
-      this.next.addEventListener('mouseleave', () => this.activeAnimation());
-      this.prev.addEventListener('mouseleave', () => this.activeAnimation());
-      this.activeAnimation();
-    }
+			`;
+      this.bindTriggers();
+      this.decorizeSlides();
+      if (this.autoplay) {
+        this.container.addEventListener('mouseenter', () => clearInterval(this.paused));
+        this.next.addEventListener('mouseenter', () => clearInterval(this.paused));
+        this.prev.addEventListener('mouseenter', () => clearInterval(this.paused));
+        this.container.addEventListener('mouseleave', () => this.activeAnimation());
+        this.next.addEventListener('mouseleave', () => this.activeAnimation());
+        this.prev.addEventListener('mouseleave', () => this.activeAnimation());
+        this.activeAnimation();
+      }
+    } catch (e) {}
   }
 }
 
@@ -437,7 +445,9 @@ class Slider {
       autoplay
     } = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     this.container = document.querySelector(container);
-    this.slides = this.container.children;
+    try {
+      this.slides = this.container.children;
+    } catch (e) {}
     this.btns = document.querySelectorAll(btns);
     this.prev = document.querySelector(prev);
     this.next = document.querySelector(next);
