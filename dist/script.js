@@ -585,8 +585,8 @@ document.addEventListener('DOMContentLoaded', function () {
     activeClass: 'feed__item-active'
   });
   feedSlider.init();
-  const player = new _modules_playVideo__WEBPACK_IMPORTED_MODULE_2__["default"]('.showup .play', '.overlay');
-  player.init();
+  new _modules_playVideo__WEBPACK_IMPORTED_MODULE_2__["default"]('.showup .play', '.overlay').init();
+  new _modules_playVideo__WEBPACK_IMPORTED_MODULE_2__["default"]('.module__video-item .play', '.overlay').init();
   new _modules_difference__WEBPACK_IMPORTED_MODULE_3__["default"]('.officerold', '.officernew', '.officer__card-item').init();
   new _modules_forms__WEBPACK_IMPORTED_MODULE_4__["default"]('.form').init();
 });
