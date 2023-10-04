@@ -1,25 +1,596 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/main.js":
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
-/***/ (function() {
+/***/ "./src/js/modules/difference.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/difference.js ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Stafr\\Desktop\\Project_bringitup\\src\\js\\main.js: Identifier 'moduleSlider' has already been declared. (22:7)\n\n\u001b[0m \u001b[90m 20 |\u001b[39m \tshowUpSlider\u001b[33m.\u001b[39minit()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m \t\u001b[36mconst\u001b[39m moduleSlider \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mMiniSlider\u001b[39m({\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \t      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m \t\tcontainer\u001b[33m:\u001b[39m \u001b[32m'.modules__content-slider'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m \t\tprev\u001b[33m:\u001b[39m \u001b[32m'.modules__info-btns .slick-prev'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m \t\tnext\u001b[33m:\u001b[39m \u001b[32m'.modules__info-btns .slick-next'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n    at constructor (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:356:19)\n    at Parser.raise (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:3223:19)\n    at ScopeHandler.checkRedeclarationInScope (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:1496:19)\n    at ScopeHandler.declareName (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:1467:12)\n    at Parser.declareNameFromIdentifier (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:7489:16)\n    at Parser.checkIdentifier (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:7485:12)\n    at Parser.checkLVal (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:7424:12)\n    at Parser.parseVarId (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:13285:10)\n    at Parser.parseVar (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:13263:12)\n    at Parser.parseVarStatement (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:13105:10)\n    at Parser.parseStatementContent (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:12688:23)\n    at Parser.parseStatementLike (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:12593:17)\n    at Parser.parseStatementListItem (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:12573:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:13194:61)\n    at Parser.parseBlockBody (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:13187:10)\n    at Parser.parseBlock (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:13175:10)\n    at Parser.parseFunctionBody (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:11940:24)\n    at Parser.parseFunctionBodyAndFinish (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:11926:10)\n    at C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:13323:12\n    at Parser.withSmartMixTopicForbiddingContext (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:12266:14)\n    at Parser.parseFunction (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:13322:10)\n    at Parser.parseFunctionOrFunctionSent (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:11390:17)\n    at Parser.parseExprAtom (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:11163:21)\n    at Parser.parseExprSubscripts (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10862:23)\n    at Parser.parseUpdate (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10845:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10821:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10659:61)\n    at Parser.parseExprOps (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10664:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10641:23)\n    at Parser.parseMaybeAssign (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10602:21)\n    at C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10572:39\n    at Parser.allowInAnd (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:12289:12)\n    at Parser.parseMaybeAssignAllowIn (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10572:17)\n    at Parser.parseExprListItem (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:12025:18)\n    at Parser.parseCallExpressionArguments (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:11059:22)\n    at Parser.parseCoverCallAndAsyncArrowHead (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10969:29)\n    at Parser.parseSubscript (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10904:19)\n    at Parser.parseSubscripts (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10875:19)\n    at Parser.parseExprSubscripts (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10866:17)\n    at Parser.parseUpdate (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10845:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10821:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10659:61)\n    at Parser.parseExprOps (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10664:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10641:23)\n    at Parser.parseMaybeAssign (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10602:21)\n    at Parser.parseExpressionBase (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10556:23)\n    at C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10552:39\n    at Parser.allowInAnd (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:12284:16)\n    at Parser.parseExpression (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:10552:17)\n    at Parser.parseStatementContent (C:\\Users\\Stafr\\Desktop\\Project_bringitup\\node_modules\\@babel\\parser\\lib\\index.js:12742:23)");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Difference; }
+/* harmony export */ });
+class Difference {
+  constructor(oldOfficer, newOfficer, items, cardAnimals) {
+    try {
+      this.oldOfficer = document.querySelector(oldOfficer);
+      this.newOfficer = document.querySelector(newOfficer);
+      this.oldItems = this.oldOfficer.querySelectorAll(items);
+      this.newItems = this.newOfficer.querySelectorAll(items);
+      this.oldCounter = 0;
+      this.newCounter = 0;
+    } catch (e) {}
+  }
+  animatedCards(itemsOld, itemsNew) {
+    itemsOld.forEach(card => {
+      card.classList.add('animated', 'fadeIn');
+    });
+    itemsNew.forEach(card => {
+      card.classList.add('animated', 'fadeIn');
+    });
+  }
+  bindTriggers(container, items, counter) {
+    container.querySelector('.plus').addEventListener('click', () => {
+      if (counter !== items.length - 2) {
+        items[counter].style.display = 'flex';
+        counter++;
+      } else {
+        items[counter].style.display = 'flex';
+        items[items.length - 1].remove();
+      }
+    });
+  }
+  hideItems(items) {
+    items.forEach((item, i, arr) => {
+      if (i !== arr.length - 1) {
+        item.style.display = 'none';
+      }
+    });
+  }
+  init() {
+    try {
+      this.hideItems(this.oldItems);
+      this.hideItems(this.newItems);
+      this.animatedCards(this.oldItems, this.newItems);
+      this.bindTriggers(this.oldOfficer, this.oldItems, this.oldCounter);
+      this.bindTriggers(this.newOfficer, this.newItems, this.newCounter);
+    } catch (e) {}
+  }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/forms.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/forms.js ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Forms; }
+/* harmony export */ });
+class Forms {
+  constructor(forms) {
+    this.forms = document.querySelectorAll(forms);
+    this.inputs = document.querySelectorAll('input');
+    this.message = {
+      loading: 'Загрузка...',
+      success: 'Спасибо! Скоро мы с вами свяжемся',
+      failure: 'Что-то пошло не так...'
+    };
+    this.path = 'assets/question.php';
+  }
+  clearInputs() {
+    this.inputs.forEach(input => {
+      input.value = '';
+    });
+  }
+  toggleBtn(boolean) {
+    this.forms.forEach(form => {
+      let btn = form.querySelector('.btn');
+      btn.disabled = boolean;
+    });
+  }
+  checkInputsEmptyWarning() {
+    this.inputs.forEach(input => {
+      input.addEventListener('blur', () => {
+        if (input.value.trim() === '') {
+          input.style.border = '1px solid red';
+          input.placeholder = 'Please add text';
+          this.toggleBtn(true);
+        } else {
+          input.placeholder = '';
+          input.style.border = '';
+          this.toggleBtn(false);
+        }
+      });
+    });
+  }
+  checkMailInputs() {
+    const mailInputs = document.querySelectorAll('[type="email"]');
+    mailInputs.forEach(input => {
+      input.addEventListener('keypress', function (e) {
+        if (e.key.match(/[^a-z 0-9 @ \.]/ig)) {
+          e.preventDefault();
+        }
+      });
+    });
+  }
+  maskJs() {
+    let setCursorPosition = (pos, elem) => {
+      elem.focus();
+      if (elem.setSelectionRange) {
+        elem.setSelectionRange(pos, pos);
+      } else if (elem.createTextRange) {
+        let range = elem.createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', pos);
+        range.moveStart('character', pos);
+        range.select();
+      }
+    };
+    function createMask(event) {
+      let matrix = '+1 (___) ___-____',
+        i = 0,
+        def = matrix.replace(/\D/g, ''),
+        val = this.value.replace(/\D/g, '');
+      if (def.length >= val.length) {
+        val = def;
+      }
+      this.value = matrix.replace(/./g, function (a) {
+        return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
+      });
+      if (event.type === 'blur') {
+        if (this.value.length == 2) {
+          this.value = '';
+        }
+      } else {
+        setCursorPosition(this.value.length, this);
+      }
+    }
+    let inputs = document.querySelectorAll('[name="phone"]');
+    inputs.forEach(input => {
+      input.addEventListener('input', createMask);
+      input.addEventListener('focus', createMask);
+      input.addEventListener('blur', createMask);
+    });
+  }
+  clearIntervalItem() {
+    this.forms.forEach(item => {
+      item.classList.remove('fadeOutRight');
+      item.classList.add('fadeInRight');
+      item.style.display = 'block';
+    });
+  }
+  async postData(url, data) {
+    let res = await fetch(url, {
+      method: 'POST',
+      body: data
+    });
+    return await res.text();
+  }
+  init() {
+    this.toggleBtn(true);
+    this.checkInputsEmptyWarning();
+    this.checkMailInputs();
+    this.maskJs();
+    this.clearIntervalItem();
+    this.forms.forEach(item => {
+      item.addEventListener('submit', e => {
+        e.preventDefault();
+        let statusMessage = document.createElement('div');
+        statusMessage.classList.add('animated');
+        statusMessage.classList.add('tada');
+        statusMessage.style.cssText = `
+					margin-top: 45px;
+					font-size: 25px;
+					color: grey;
+					text-align: center;
+				`;
+        item.parentNode.appendChild(statusMessage);
+        item.classList.add('animated');
+        item.classList.add('fadeOutRight');
+        setTimeout(() => {
+          item.style.display = 'none';
+        }, 500);
+        statusMessage.textContent = this.message.loading;
+        const formData = new FormData(item);
+        this.postData(this.path, formData).then(res => {
+          console.log(res);
+          statusMessage.textContent = this.message.success;
+        }).catch(() => {
+          statusMessage.textContent = this.message.failure;
+        }).finally(() => {
+          this.clearInputs();
+          setTimeout(() => {
+            statusMessage.remove();
+            this.clearIntervalItem();
+          }, 6000);
+        });
+      });
+    });
+  }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/playVideo.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/playVideo.js ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ VideoPlayer; }
+/* harmony export */ });
+class VideoPlayer {
+  constructor(triggers, overlay) {
+    this.btns = document.querySelectorAll(triggers);
+    this.overlay = document.querySelector(overlay);
+    this.close = this.overlay.querySelector('.close');
+  }
+  bindTriggers() {
+    this.btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (document.querySelector('iframe#frame')) {
+          this.overlay.style.display = 'flex';
+        } else {
+          const path = btn.getAttribute('data-url');
+          this.createPlayer(path);
+        }
+      });
+    });
+  }
+  bindCloseBtn() {
+    this.close.addEventListener('click', () => {
+      this.overlay.style.display = 'none';
+      this.player.stopVideo();
+    });
+  }
+  createPlayer(url) {
+    this.player = new YT.Player('frame', {
+      height: '100%',
+      width: '100%',
+      videoId: `${url}`
+    });
+    console.log(this.player);
+    this.overlay.style.display = 'flex';
+  }
+  init() {
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    this.bindTriggers();
+    this.bindCloseBtn();
+  }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/slider/slider-main.js":
+/*!**********************************************!*\
+  !*** ./src/js/modules/slider/slider-main.js ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ MainSlider; }
+/* harmony export */ });
+/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider */ "./src/js/modules/slider/slider.js");
+
+class MainSlider extends _slider__WEBPACK_IMPORTED_MODULE_0__["default"] {
+  constructor(btns) {
+    super(btns);
+  }
+  showSlides(n) {
+    if (n > this.slides.length) {
+      this.slideIndex = 1;
+    }
+    if (n < 1) {
+      this.slideIndex = this.slides.length;
+    }
+    try {
+      this.hanson.style.opacity = '0';
+      if (n === 3) {
+        this.hanson.classList.add('animated');
+        setTimeout(() => {
+          this.hanson.style.opacity = '1';
+          this.hanson.classList.add('slideInUp');
+        }, 3000);
+      } else {
+        this.hanson.classList.remove('slideInUp');
+      }
+    } catch (e) {}
+    Array.from(this.slides).forEach(slide => {
+      slide.style.display = 'none';
+      slide.classList.remove('animated', 'fadeIn');
+      slide.classList.add('animated', 'fadeOut');
+    });
+    this.slides[this.slideIndex - 1].style.display = 'block';
+    this.slides[this.slideIndex - 1].classList.remove('animated', 'fadeOut');
+    this.slides[this.slideIndex - 1].classList.add('animated', 'fadeIn');
+  }
+  plusSlides(n) {
+    this.showSlides(this.slideIndex += n);
+  }
+  bindTriggers() {
+    this.btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.plusSlides(1);
+      });
+      btn.parentNode.previousElementSibling.addEventListener('click', e => {
+        e.preventDefault();
+        this.slideIndex = 1;
+        this.showSlides(this.slideIndex);
+      });
+    });
+    document.querySelectorAll('.prevmodule').forEach(item => {
+      item.addEventListener('click', e => {
+        e.stopPropagation();
+        e.preventDefault();
+        this.plusSlides(-1);
+      });
+    });
+    document.querySelectorAll('.nextmodule').forEach(item => {
+      item.addEventListener('click', e => {
+        e.stopPropagation();
+        e.preventDefault();
+        this.plusSlides(1);
+      });
+    });
+  }
+  render() {
+    if (this.container) {
+      try {
+        this.hanson = document.querySelector('.hanson');
+      } catch (e) {}
+      this.showSlides(this.slideIndex);
+      this.bindTriggers();
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/slider/slider-mini.js":
+/*!**********************************************!*\
+  !*** ./src/js/modules/slider/slider-mini.js ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ MiniSlider; }
+/* harmony export */ });
+/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider */ "./src/js/modules/slider/slider.js");
+
+class MiniSlider extends _slider__WEBPACK_IMPORTED_MODULE_0__["default"] {
+  constructor(container, next, prev, activeClass, animate, autoplay) {
+    super(container, next, prev, activeClass, animate, autoplay);
+    this.paused = false;
+  }
+  decorizeSlides() {
+    Array.from(this.slides).forEach(slide => {
+      slide.classList.remove(this.activeClass);
+      if (this.animate) {
+        slide.querySelector('.card__title').style.opacity = '0.4';
+        slide.querySelector('.card__controls-arrow').style.opacity = '0';
+      }
+    });
+    if (!this.slides[0].closest('button')) {
+      this.slides[0].classList.add(this.activeClass);
+    }
+    if (this.animate) {
+      this.slides[0].querySelector('.card__title').style.opacity = '1';
+      this.slides[0].querySelector('.card__controls-arrow').style.opacity = '1';
+    }
+  }
+  nextSlide() {
+    if (this.prev.parentNode === this.container) {
+      this.container.insertBefore(this.slides[0], this.prev);
+    } else {
+      this.container.appendChild(this.slides[0]);
+    }
+    this.decorizeSlides();
+  }
+  bindTriggers() {
+    this.next.addEventListener('click', () => this.nextSlide());
+    this.prev.addEventListener('click', () => {
+      for (let i = this.slides.length - 1; i > 0; i--) {
+        if (this.slides[i].tagName !== 'BUTTON') {
+          let active = this.slides[i];
+          this.container.insertBefore(active, this.slides[0]);
+          this.decorizeSlides();
+          break;
+        }
+      }
+    });
+  }
+  activeAnimation() {
+    this.paused = setInterval(() => this.nextSlide(), 5000);
+  }
+  init() {
+    try {
+      this.container.style.cssText = `
+			display: flex;
+			flex-wrap: wrap;
+			overflow: hidden;
+			align-items: flex-start;
+			`;
+      this.bindTriggers();
+      this.decorizeSlides();
+      if (this.autoplay) {
+        this.container.addEventListener('mouseenter', () => clearInterval(this.paused));
+        this.next.addEventListener('mouseenter', () => clearInterval(this.paused));
+        this.prev.addEventListener('mouseenter', () => clearInterval(this.paused));
+        this.container.addEventListener('mouseleave', () => this.activeAnimation());
+        this.next.addEventListener('mouseleave', () => this.activeAnimation());
+        this.prev.addEventListener('mouseleave', () => this.activeAnimation());
+        this.activeAnimation();
+      }
+    } catch (e) {}
+  }
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/slider/slider.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/slider/slider.js ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ Slider; }
+/* harmony export */ });
+class Slider {
+  constructor() {
+    let {
+      container = null,
+      btns = null,
+      next = null,
+      prev = null,
+      activeClass = '',
+      animate,
+      autoplay
+    } = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    this.container = document.querySelector(container);
+    try {
+      this.slides = this.container.children;
+    } catch (e) {}
+    this.btns = document.querySelectorAll(btns);
+    this.prev = document.querySelector(prev);
+    this.next = document.querySelector(next);
+    this.activeClass = activeClass;
+    this.animate = animate;
+    this.autoplay = autoplay;
+    this.slideIndex = 1;
+  }
+}
 
 /***/ })
 
 /******/ 	});
 /************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
 /******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/js/main.js"]();
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
 /******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+!function() {
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_slider_slider_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider/slider-main */ "./src/js/modules/slider/slider-main.js");
+/* harmony import */ var _modules_slider_slider_mini__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider/slider-mini */ "./src/js/modules/slider/slider-mini.js");
+/* harmony import */ var _modules_playVideo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/playVideo */ "./src/js/modules/playVideo.js");
+/* harmony import */ var _modules_difference__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/difference */ "./src/js/modules/difference.js");
+/* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/forms */ "./src/js/modules/forms.js");
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = new _modules_slider_slider_main__WEBPACK_IMPORTED_MODULE_0__["default"]({
+    btns: '.next',
+    container: '.page'
+  });
+  slider.render();
+  const modulePageSlider = new _modules_slider_slider_main__WEBPACK_IMPORTED_MODULE_0__["default"]({
+    container: '.moduleapp',
+    btns: '.next'
+  });
+  modulePageSlider.render();
+  const showUpSlider = new _modules_slider_slider_mini__WEBPACK_IMPORTED_MODULE_1__["default"]({
+    container: '.showup__content-slider',
+    prev: '.showup__prev',
+    next: '.showup__next',
+    activeClass: 'card-active',
+    animate: true
+  });
+  showUpSlider.init();
+  const moduleSlider = new _modules_slider_slider_mini__WEBPACK_IMPORTED_MODULE_1__["default"]({
+    container: '.modules__content-slider',
+    prev: '.modules__info-btns .slick-prev',
+    next: '.modules__info-btns .slick-next',
+    activeClass: 'card-active',
+    animate: true,
+    autoplay: true
+  });
+  moduleSlider.init();
+  const feedSlider = new _modules_slider_slider_mini__WEBPACK_IMPORTED_MODULE_1__["default"]({
+    container: '.feed__slider',
+    prev: '.feed__slider .slick-prev',
+    next: '.feed__slider .slick-next',
+    activeClass: 'feed__item-active'
+  });
+  feedSlider.init();
+  const player = new _modules_playVideo__WEBPACK_IMPORTED_MODULE_2__["default"]('.showup .play', '.overlay');
+  player.init();
+  new _modules_difference__WEBPACK_IMPORTED_MODULE_3__["default"]('.officerold', '.officernew', '.officer__card-item').init();
+  new _modules_forms__WEBPACK_IMPORTED_MODULE_4__["default"]('.form').init();
+});
+}();
 /******/ })()
 ;
 //# sourceMappingURL=script.js.map
